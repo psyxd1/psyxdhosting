@@ -1,43 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>psyxD Hosting</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PSYxD | saugiiman - Minecraft Server Developer</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-slide-up {
+      animation: fadeSlideUp 0.8s ease forwards;
+    }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    a {
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #3b82f6;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <img src="logo.png" alt="psyxD Hosting Logo" class="logo">
-    <h1>Welcome to psyxD Hosting</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="login.html">Login</a>
-    </nav>
+<body class="bg-gray-900 text-white font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="text-center py-12 px-4 fade-slide-up delay-100">
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+      <img src="psyxd-logo.png" alt="psyxD Logo" class="w-14 h-14 rounded-md shadow-md">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide drop-shadow-lg">
+        PSYxD <span class="text-blue-400">/</span> saugiiman
+      </h1>
+    </div>
+    <p class="text-gray-400 mt-4 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+      Minecraft Server Developer | Website & Bot Creator | Cracked Server Wizard
+    </p>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Free Minecraft Server Hosting</h2>
-      <p>Start your free server now — powered by psyxD Hosting.</p>
-      <a href="login.html" class="btn">Get Started</a>
+  <!-- Main -->
+  <main class="max-w-4xl mx-auto px-4 md:px-6 space-y-16">
+
+    <!-- What I Do -->
+    <section class="fade-slide-up delay-200">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-1">💻 What I Do</h2>
+      <div class="bg-gray-800 p-5 md:p-6 rounded-xl shadow-lg space-y-4 text-gray-300 text-base md:text-lg leading-relaxed">
+        <p>
+          I specialize in everything needed to build and run professional Minecraft servers—cracked or premium—and even extend services into website and bot development.
+        </p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Server Setup:</strong> SMP, Lifesteal, Minigames, Lobby/Hub, Custom Networks</li>
+          <li><strong>Plugin Support:</strong> LuckPerms, Multiverse, EssentialsX, Geyser, ViaVersion</li>
+          <li><strong>Lag Fix & Optimization:</strong> Paper, Purpur, Velocity, timings reports</li>
+          <li><strong>Lobby Design:</strong> Portals, NPCs, cosmetics, selectors & branding</li>
+          <li><strong>Ranks & Permissions:</strong> Full LuckPerms setup for staff & players</li>
+          <li><strong>Multi-server Systems:</strong> BungeeCord & Velocity proxies</li>
+          <li><strong>Discord Bots:</strong> Automation, moderation, chat sync (JS or Python)</li>
+          <li><strong>Website Creation:</strong> Portfolios, landing pages, dashboards</li>
+        </ul>
+        <p>
+          From zero to full network, I build and manage it all.
+        </p>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>psyxD Hosting is a 100% free Minecraft server hosting platform built for gamers by gamers. Our mission is to provide reliable, no-cost game server solutions with a smooth and user-friendly interface.</p>
+    <!-- Services -->
+    <section class="fade-slide-up delay-300">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-1">💼 Services</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-2 text-base md:text-lg leading-relaxed">
+        <li>Cracked Server Setup & AFK Bot Configuration</li>
+        <li>Performance Tuning & Plugin Fixes</li>
+        <li>Lobby Building with Portals, Cosmetics, & Menus</li>
+        <li>Custom Branding: MOTDs, Icons, Server UI</li>
+        <li>Velocity & BungeeCord Network Setup</li>
+        <li>Discord Bot Development (JS, Python)</li>
+        <li>Fully Responsive Website Development</li>
+      </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have questions or feedback? Email us at <a href="mailto:support@psyxdhosting.com">support@psyxdhosting.com</a></p>
+    <!-- Contact -->
+    <section class="fade-slide-up delay-400">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-1">📬 Contact</h2>
+      <p class="text-gray-300 text-base md:text-lg flex items-center gap-2 mb-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="w-5 h-5 inline-block">
+        <strong>saugiiman</strong>
+      </p>
+      <p class="text-gray-300 text-base md:text-lg italic">
+        💬 Discord Server: Coming Soon
+      </p>
     </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 psyxD Hosting. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 mt-20 mb-8 select-none fade-slide-up delay-400 text-sm md:text-base">
+    © 2025 PSYxD / saugiiman | Minecraft Server Developer
   </footer>
+
 </body>
 </html>
